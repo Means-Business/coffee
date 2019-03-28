@@ -15,8 +15,8 @@ export default function BackgroundSection({
   return (
     <BackgroundImage className={styleClass} fluid={img}>
       <h1
-        id="moo"
-        className="title text-white text-uppercase text-center display-4 font-weight-bold"
+        id={title === "moocoding's" ? 'moo' : null}
+        className="title text-white text-uppercase text-center font-weight-bold"
       >
         <span>{moo}</span>
         {coding}

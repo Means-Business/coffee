@@ -1,3 +1,6 @@
+// rfs modules
+@import '~rfs/scss';
+
 :root {
   --mainBrown: #2d1e1f;
   --mainYellow: rgb(255, 158, 9);
@@ -28,14 +31,22 @@ h6 {
   color: var(--mainYellow);
   font-size: 2rem;
 }
+.title,
+h1#title_js__component {
+  @include rfs(64);
+}
 h1#moo span {
   text-decoration: underline;
   text-decoration-color: #00aeef;
 }
+h3#footer__component {
+  @include font-size(1.6rem);
+}
 // div.default__background[style] {
 //   opacity: unset !important;
 // }
-.default__background {
+.default__background,
+.about__background {
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -47,6 +58,9 @@ h1#moo span {
   background-size: cover;
   opacity: unset !important;
 }
+.about__background {
+  min-height: 60vh;
+}
 .btn-yellow {
   color: var(--mainYellow);
   border-color: var(--mainYellow);
@@ -54,4 +68,7 @@ h1#moo span {
 .btn-yellow:hover {
   background: var(--mainYellow);
   color: var(--mainBrown);
+}
+.footer {
+  background: var(--mainBrown);
 }
