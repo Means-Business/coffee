@@ -1,5 +1,5 @@
 :root {
-  --mainBrown: #2d1ef1;
+  --mainBrown: #2d1e1f;
   --mainYellow: rgb(255, 158, 9);
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
@@ -28,12 +28,30 @@ h6 {
   color: var(--mainYellow);
   font-size: 2rem;
 }
-div.default__background/*(:before, :after)*/ {
+h1#moo span {
+  text-decoration: underline;
+  text-decoration-color: #00aeef;
+}
+// div.default__background[style] {
+//   opacity: unset !important;
+// }
+.default__background {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#e66465, #9198e5);
+  z-index: auto;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
   background-position: center;
   background-size: cover;
+  opacity: unset !important;
+}
+.btn-yellow {
+  color: var(--mainYellow);
+  border-color: var(--mainYellow);
+}
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainBrown);
 }

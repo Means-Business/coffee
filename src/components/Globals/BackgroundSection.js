@@ -7,10 +7,19 @@ export default function BackgroundSection({
   title,
   children,
 }) {
+  console.log(title);
+  var moo = title.substring(0, 3);
+  var coding = title.substring(3, 11);
+  console.log(moo);
+  console.log(coding);
   return (
     <BackgroundImage className={styleClass} fluid={img}>
-      <h1 className="title text-white text-uppercase text-center display-4 font-weight-bold">
-        {title}
+      <h1
+        id="moo"
+        className="title text-white text-uppercase text-center display-4 font-weight-bold"
+      >
+        <span>{moo}</span>
+        {coding}
       </h1>
       {children}
     </BackgroundImage>
