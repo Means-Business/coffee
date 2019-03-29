@@ -12,6 +12,13 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-snipcart`,
+      options: {
+        apiKey: process.env.SNIPCART_KEY,
+        autopop: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
