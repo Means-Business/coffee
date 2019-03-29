@@ -4,7 +4,8 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BackgroundSection from '../components/Globals/BackgroundSection';
-import Info from '../components/Home/info';
+import Info from '../components/Home/Info';
+import Menu from '../components/Home/Menu';
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -25,6 +26,7 @@ const IndexPage = ({ data }) => (
       title="moocoding's"
     />
     <Info />
+    <Menu items={data.menu} />
   </Layout>
 );
 
